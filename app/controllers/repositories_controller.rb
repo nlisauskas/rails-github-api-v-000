@@ -10,7 +10,7 @@ class RepositoriesController < ApplicationController
       req.headers["Authorization"] = "token #{session[:token]}"
     end
 
-    @username = JSON.parse(user_resp.body)["login'"]
+    @username = JSON.parse(user_resp.body)["login"]
   end
 
   def create
